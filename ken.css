@@ -2,3 +2,14 @@ img.thumb {
 	width: 100%;
 	height: auto;
 }
+
+.responsive-text {
+  font-size: 16px;
+}
+
+/* スマホ（画面幅600px以下） */
+@media screen and (max-width: 600px) {
+  .responsive-text {
+    font-size: 54px; /* スマホでは大きく */
+  }
+}
