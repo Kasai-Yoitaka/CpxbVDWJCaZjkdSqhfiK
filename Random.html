@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>RANDOMサンプル</title>
+</head>
+<script>
+var	allowChars = "abcdefghijkmnpqrstuvwxyzABCDEFGHIJKLMNPQRSTUVWXYZ23456789";
+function showMessage() {
+	var dom  = document.getElementById("num");
+	var	len = dom.value ;
+	dom  = document.getElementById("result");
+	var	idx = allowChars.length ;
+	var	strResult = "" ;
+	for(i=0 ; i<len ;i++){
+		idx = Math.floor(Math.random()*allowChars.length);
+		strResult += allowChars[idx];
+	}
+	dom.value = strResult;
+}
+</script>
+<body>
+	<h1>ボタンクリックサンプル</h1>
+	<input id="num" value="10" type="input"></input><BR>
+    <button onclick="showMessage()">
+        クリックしてください
+    </button><br>
+	<input id="result" value="aaa" type="input"></input>
+</body>
+</html>
