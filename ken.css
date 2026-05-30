@@ -4,12 +4,12 @@ img.thumb {
 }
 
 .responsive-text {
-  font-size: 32px;
+  font-size: 28px;
 }
 
 /* スマホ（画面幅600px以下） */
 @media screen and (max-width: 800px) {
   .responsive-text {
-    font-size: 64px; /* スマホでは大きく */
+    font-size: 58px; /* スマホでは大きく */
   }
 }
